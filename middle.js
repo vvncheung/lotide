@@ -17,7 +17,7 @@ const assertArraysEqual = function(actual, expected) {
     console.log(`🙇🏻‍♀️Assertion passed: ${JSON.stringify(actual)} === ${JSON.stringify(expected)}`);
     return;
   } else {
-    console.log(`🙅🏻‍♀️Assertion failed: ${actual} !==  ${expected}`);
+    console.log(`🙅🏻‍♀️Assertion failed: ${JSON.stringify(actual)} !==  ${JSON.stringify(expected)}`);
     return;
   }
 };
