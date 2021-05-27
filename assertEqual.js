@@ -1,9 +1,11 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    return console.log(`🙅🏻‍♀️Assertion failed: ${actual} !==  ${expected}`);
+const assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected)) {
+    console.log(`🙇🏻‍♀️Assertion passed: ${JSON.stringify(actual)} === ${JSON.stringify(expected)}`);
+    return;
   } else {
-    return console.log(`🙇🏻‍♀️Assertion passed:" ${actual} === ${expected}`);
+    console.log(`🙅🏻‍♀️Assertion failed: ${JSON.stringify(actual)} !==  ${JSON.stringify(expected)}`);
+    return;
   }
 };
 
