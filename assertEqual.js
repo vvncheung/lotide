@@ -1,23 +1,16 @@
 // FUNCTION IMPLEMENTATION
-const assertArraysEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🙇🏻‍♀️Assertion passed: ${JSON.stringify(actual)} === ${JSON.stringify(expected)}`);
-    return;
+const assertEqual = function(actual, expected) {
+  if (actual !== expected) {
+    return console.log(`🙅🏻‍♀️Assertion failed: ${actual} !==  ${expected}`);
   } else {
-    console.log(`🙅🏻‍♀️Assertion failed: ${JSON.stringify(actual)} !==  ${JSON.stringify(expected)}`);
-    return;
+    return console.log(`🙇🏻‍♀️Assertion passed:" ${actual} === ${expected}`);
   }
 };
 
 // TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-// assertEqual("Hello", "Hello");
-// assertEqual("Hello", "hello");
-// assertEqual("100", "100");
-// assertEqual("100", "-100");
-
-const first = "one";
-const two = "second";
-
-assertArraysEqual({first}, {two})
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);
+assertEqual("Hello", "Hello");
+assertEqual("Hello", "hello");
+assertEqual("100", "100");
+assertEqual("100", "-100");

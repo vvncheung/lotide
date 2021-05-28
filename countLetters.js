@@ -17,7 +17,7 @@ const countLetters = function(string) {
       if (results[letter]) {
         results[letter] += 1;
       } else {
-        results[letter] = 1;
+        resultsg[letter] = 1;
       }
     }
   }
