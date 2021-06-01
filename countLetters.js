@@ -17,11 +17,13 @@ const countLetters = function(string) {
       if (results[letter]) {
         results[letter] += 1;
       } else {
-        resultsg[letter] = 1;
+        results[letter] = 1;
       }
     }
   }
   return results;
 };
 
-console.log(countLetters('Lighthouse in the house'));
+// console.log(countLetters('Lighthouse in the house'));
+
+module.exports = countLetters;

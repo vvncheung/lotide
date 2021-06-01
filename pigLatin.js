@@ -10,7 +10,7 @@ const pigLatinatorOneWord = function(string) {
   return pigLatinedString;
 };
 
-const pigLatinator = function(string) {
+const pigLatin = function(string) {
   let finalString = "";
   for (let i = 0; i < string.length; i++) {
     finalString += pigLatinatorOneWord(string[i]) + " ";
@@ -18,5 +18,5 @@ const pigLatinator = function(string) {
   console.log(finalString);
 };
 
-pigLatinator(array);
+module.exports = pigLatin;
 

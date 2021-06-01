@@ -30,4 +30,4 @@ const map = function(array, callback) {
 };
 
 
-assertArraysEqual(words, results1)
+module.exports = map;

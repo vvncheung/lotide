@@ -33,6 +33,8 @@ const without = function(source, itemsToRemove) {
   return console.log(newArray);
 };
 
+module.exports = without;
+
 // test cases
 // without([1, 2, 3, 4, 5], [1, 3, 4]) // => [2, 5]
 // without([1, 2, 3], [1]) // => [2, 3]

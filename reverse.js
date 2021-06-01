@@ -13,4 +13,4 @@ const reverseString = function(string) {
   }
 };
 
-reverseString(array);
+module.exports = reverseString;
